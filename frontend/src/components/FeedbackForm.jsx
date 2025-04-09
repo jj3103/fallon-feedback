@@ -61,7 +61,7 @@ function FeedbackForm() {
         >
             {successMessage && (
                 <div className="text-green-600 font-semibold text-center">
-                    {success}
+                    {successMessage}
                 </div>
             )}
             <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100">
