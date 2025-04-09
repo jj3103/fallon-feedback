@@ -10,6 +10,7 @@ function FeedbackForm() {
     })
     const [loading, setLoading] = useState(false)
     const [errors, setErrors] = useState({})
+    const [successMessage, setSuccessMessage] = useState("")
 
     const handleChange = (e) => {
         setFormData((prev) => ({
@@ -45,6 +46,7 @@ function FeedbackForm() {
         try {
             await createFeedbacks(formData);
             setFormData({ fullName: "", email: "", message: "" });
+            setSuccessMessage("Feedback submitted successfully!")
         } catch (error) {
             console.error("Error submitting feedback:", error);
         } finally {
@@ -57,6 +59,11 @@ function FeedbackForm() {
             onSubmit={handleSubmit}
             className="bg-white dark:bg-gray-800 shadow-md rounded px-8 py-6 w-full max-w-lg mx-auto space-y-4 transition-all overflow-x-hidden"
         >
+            {successMessage && (
+                <div className="text-green-600 font-semibold text-center">
+                    {success}
+                </div>
+            )}
             <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-gray-100">
                 Submit Your Feedback
             </h2>
