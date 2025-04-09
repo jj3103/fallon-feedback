@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "http://localhost:5017";
+const API_BASE_URL = "https://feedback-website-3mzz.onrender.com";
 
 const api = axios.create({
   baseURL: API_BASE_URL,
