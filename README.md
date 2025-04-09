@@ -6,7 +6,7 @@ A simple and clean full-stack feedback collection app built using **React (Vite)
 
 ## 🔗 Live Demo
 
-👉 [View Project Live](https://your-deployment-url.com)
+👉 [View Project Live](https://voluble-figolla-636044.netlify.app)
 
 ## 🚀 Features
 
@@ -48,8 +48,11 @@ A simple and clean full-stack feedback collection app built using **React (Vite)
 
 ![SubmitFeedback](/frontend/public/feed1.png)
 ![AdminView](/frontend/public/feed2.png)
-![SubmitFeedbackMobile](/frontend/public/feed3.png)
-![AdminViewMobile](/frontend/public/feed4.png)
+
+## Mobile View
+
+<img src="/frontend/public/feed3.png" alt="Mobile Screenshot" width="200" />
+<img src="/frontend/public/feed4.png" alt="Mobile Screenshot" width="200" />
 
 ---
 
